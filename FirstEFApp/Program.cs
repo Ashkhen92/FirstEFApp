@@ -16,8 +16,10 @@ namespace FirstEFApp
             {
                 User user1 = new User() { Name = "Tom", Age = 23 };
                 User user2 = new User() { Name = "Ash", Age = 28 };
+                User user3 = new User() { Name = "James", Age = 32 };
                 db.Users.Add(user1);
                 db.Users.Add(user2);
+                db.Users.Add(user3);
                 db.SaveChanges();
                 var Users = db.Users;
 
